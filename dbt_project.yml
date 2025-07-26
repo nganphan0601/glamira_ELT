@@ -36,6 +36,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  my_new_project:
-
-
+  glamira_elt_pipeline:
+    staging:
+      materialized: view
+    fact:
+      materialized: table
+    dim:
+      materialized: table
+    marts:
+      materialized: table

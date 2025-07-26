@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: glamira-data-project  # project name
+    schema: glamira_elt   # dataset name
+    tables: 
+      - name: ip2location
+      - name: product_names
+      - name: summary_users
